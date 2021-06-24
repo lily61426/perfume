@@ -1,0 +1,51 @@
+
+// product start ----------------------------------
+
+section{
+    display: flex;
+    justify-content: space-between;
+    .product-detail{
+    margin: 20px 0px 30px;
+    .product-img{
+    @include mb-3;
+    img{
+    width: 730px;
+    }
+    }
+    .product-img-detail{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 350px;
+        }
+        }
+    }
+}
+
+    aside{
+        max-width: 350px;
+        margin: 20px 0px 60px;
+    h2{
+        @include f-2;
+    }
+    p{
+        @include f-4;
+        text-align: justify;
+    }
+    i{
+        color: $cis-color;
+    }
+    h3{
+        margin-top: 20px;
+        @include f-5;
+    }
+    .notice{
+        @include f-5;
+        font-weight: lighter;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,99 @@
+
+
+// -----------------------------------
+main{
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .log-in-img{
+        width: 730px;
+        @include mb-5;
+       img{
+           width:100%;
+           
+       }
+        
+    }
+
+.log-in-align{
+    h2{
+        @include f-2;
+        @include mb-2;
+    }
+        .email{
+            @include f-5;
+            color: $b-gray;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            
+        }
+    .password{
+            color: $b-gray;    
+            margin-bottom: 36px;
+            letter-spacing: 1px;
+    }
+    .log-password{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .forget-password{
+            color: $cis-color;
+            text-decoration: none;
+            letter-spacing: 1px;
+            @include f-5;
+        }
+        .registered{
+            padding: 8px 16px;
+            color: $cis-color;
+            text-decoration: none;
+            letter-spacing: 2px;
+            border: 1px solid $cis-color;
+            border-radius: 4px;
+            @include f-5;            
+        }
+        .sign-in{
+            margin-left: 8px;
+            padding: 8px 16px;
+            color: $white;
+            text-decoration: none;
+            letter-spacing: 2px;
+            background-color: $cis-color;
+            border: 1px solid $cis-color;
+            border-radius: 4px;
+            @include f-5;
+        }
+        .forget-password:hover, .registered:hover, .sign-in:hover{
+            @include td-ul;
+        }
+    }
+    .input-pd{
+        padding: 10px 0px 11px 12px;
+        border: 1px solid $l-gray;
+        
+    }
+    }
+    @include pad {
+          .log-password{
+              @include mb-6;
+          }
+        
+      }
+    @include phone {
+        .log-in-align{
+        margin: 0 auto;
+        }
+        .log-password{
+          @include mb-6;
+      }
+    
+  }
+}
+
+
+
+
+
+

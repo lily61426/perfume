@@ -1,0 +1,11 @@
+section {
+  width: 1140px;
+  margin: 60px auto;
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .product-img img {
+  width: 730px;
+}

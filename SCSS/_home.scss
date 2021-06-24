@@ -1,0 +1,420 @@
+
+// banner start--------------------------
+.banner-content{
+    margin: 56px auto 0;
+    background-image: url("../image/banner-1.jpg");
+    height: 870px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;    
+    @include mb-4;
+.banner{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 260px;
+    padding-top: 295px;
+}
+.banner-pos{
+    color: $white;
+    text-shadow: 2px 2px 0.2em  rgba(0, 0, 0, 0.349) ;
+    h2{
+        @include f-2; 
+    }
+    p{
+        display: block;
+        width: 445px;
+        @include f-3;
+        @include mb-2;
+        text-align: justify;
+    }
+    a{
+        display: block;
+        padding: 16px;
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        width: 100%;
+        font-size: 28px;
+    }
+    
+}
+}
+@include pad{
+    .banner-content{
+        height: 650px;
+    .banner{
+        margin: 0 auto;
+        padding-top: 170px;
+    }
+    .banner-pos{
+        display: block;
+        margin: 0 auto;
+        p{
+            max-width: 350px;;
+           @include f-4;
+        }
+    }
+}
+}
+@include phone{
+    .banner-content{
+        height: 480px;
+
+    .banner{
+        padding-top: 101px;
+        margin-bottom: 135px;
+    }
+    .banner-pos{
+        display: block;
+        margin: 0 auto;
+        p{
+            max-width: 345px;;
+        }
+    }
+}
+}
+// product description start---------------
+
+.product-description-control {
+    display: flex;
+    flex-wrap: wrap;
+  
+    .product-row-reverse {
+      flex-direction: row-reverse;
+    }
+    .product-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .description-control {
+        width: 555px;
+        .product-description-content {
+          padding-left: 110px;
+          @include pad {
+            padding-left:0px;
+          }
+          h2 {
+            @include f-2;
+          }
+          p {
+            width: 350px;
+            display: block;
+            @include f-4;
+            @include mb-2;
+            font-weight: lighter;
+            text-align: justify;
+          }
+          a {
+            display: block;
+            @include f-5;
+            text-decoration: none;
+            color: $l-cis-color;
+            
+          }
+        }
+        .product-description-content {
+            a:hover {
+              @include td-ul;
+              color: lighten($l-cis-color, 10%);
+            }
+          }
+      }
+      .product-description-img {
+        width: 555px;
+        height: 555px;
+        background-image: url('../image/index1.jpg');
+        background-size: 110%;
+        background-position: -10px -60px;
+      }
+      .product-description-img2 {
+        background-image: url('../image/index2.png');
+        background-size: cover;
+        width: 555px;
+        height: 555px;
+      }
+      .product-description-img3 {
+        width: 555px;
+        height: 555px;
+        background-image: url('../image/index3.jpg');
+        background-size: 150%;
+        background-position: -50px 0px;
+      }
+    }
+    .product-description-img4 {
+      width: 555px;
+      height: 1080px;
+      @include mb-4;
+      background-image: url('../image/index4.jpg');
+      background-size: cover;
+      background-position: -80px 0px;
+    }
+    .product-detail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .product-description-content-padding-left {
+        padding-left: 103px;
+        h3 {
+          @include f-3;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+        p {
+          display: inline-block;
+          width: 350px;
+          @include f-5;
+          margin-bottom: 52px;
+          font-weight: lighter;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+    
+    .hover-color {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      text-align: center;
+      color: $b-gray;
+      border: 2px solid black;
+      border-radius: 30px;
+      @include f-4;
+      &:hover {
+        transition: 0.5s linear 0s;
+        color: #fff;
+        background-color: $b-gray;
+      }
+    }
+    @include pad {
+      .product-row-reverse {
+        flex-direction: row;
+      }
+      .product-description {
+        flex-wrap: wrap;
+      }
+      .description-control {
+        max-width: 480px;
+        .product-description-content {
+          
+          margin-top: 8px;
+          padding: 0px 10px;
+          @include mb-3;
+          p {
+            min-width: 480px;
+          }
+        }
+      }
+      .product-description-img {
+        max-width: 480px;
+        max-height: 480px;
+        background-size: 110%;
+        background-position: -10px -60px;
+      }
+      .product-description-img2 {
+        max-width: 480px;
+        max-height: 480px;
+      }
+      .product-description-img3 {
+        max-width: 480px;
+        max-height: 480px;
+        background-position: -50px 0px;
+      }
+      .product-description-img4 {
+        max-width: 480px;
+        max-height: 1000px;
+        background-position: -80px 0px;
+        @include mb-1;
+      }
+      .product-detail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        .product-description-content-padding-left {
+          padding-left: 0px;
+          p {
+            width: 450px;
+          }
+          a {
+            @include mb-3;
+          }
+        }
+      }
+    }
+    @include phone {
+        .product-row-reverse {
+            flex-direction: row;
+          }
+          .description-control {
+            max-width: 350px;
+            .product-description-content {
+              
+              margin-top: 8px;
+              padding: 0px 10px;
+              @include mb-3;
+              p {
+                min-width: 350px;
+              
+              }
+            }
+          }
+      .product-description-img {
+        max-width: 350px;
+        max-height: 350px;
+        background-size: 110%;
+        background-position: -10px -60px;
+      }
+      .product-description-img2 {
+        max-width: 350px;
+        max-height: 350px;
+      }
+      .product-description-img3 {
+        max-width: 350px;
+        max-height: 350px;
+        background-position: -50px 0px;
+      }
+      .product-description-img4 {
+        max-width: 350px;
+        max-height: 1000px;
+        background-position: -180px 0px;
+        @include mb-1;
+      }
+      .product-description-content-padding-left {
+        padding-left: 0px;
+      }
+    }
+  }
+  
+
+// card start---------------
+.card{    
+    padding: 40px 0px;
+        background-color: $l-gray;
+        @include mb-4;
+.card-bar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+.card-control{
+    display: flex;
+    flex-wrap: wrap;
+    .card-img{
+        width: 350px;
+        overflow: hidden;
+        img{
+        height: 540px;
+        display: block;
+        }
+    }
+    
+    
+    .sold-out{
+        width: 350px;
+        height: 540px;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.331);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: $white;
+            @include f-3;
+        }
+    }
+   
+.card-content{
+    a{
+        color: #000;
+        text-decoration: none;
+    h3{
+        @include f-3;
+    }
+    p{
+        @include f-5;
+        @include mb-2;
+        font-weight: lighter;
+    }
+    h3:hover, p:hover{
+        @include td-ul;
+    }
+}
+    .price{
+        font-weight: lighter;
+    }
+    span{
+        text-decoration: line-through;
+        color: $d-gray;
+    }
+}
+}
+}
+@include pad {
+    .price{
+        @include mb-3;
+    }
+}
+}
+
+// recycle start---------------
+.recycle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 730px;
+        @include mb-4;
+    }
+    .recycle-content{
+        
+    h2{
+        @include f-2;
+    }
+    h3{
+        @include f-4;
+        @include mb-2;
+        width: 350px;
+        font-weight: lighter;
+    }
+    p{
+        width: 350px;
+        @include f-5;
+        @include mb-2;
+        font-weight: lighter;
+    }
+    a{
+        @include f-5;
+        color: $l-cis-color;
+        text-decoration: none;
+    }
+    a:hover{
+        @include td-ul;
+    }
+    }
+@include pad {
+    img{
+        height: auto;
+        max-width: 100%;
+        @include mb-1;
+    }
+    .recycle-content{
+        h3{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+    }
+        a{
+            display: block;
+            @include mb-3;
+    }
+    }
+}
+}
+
+
+
+

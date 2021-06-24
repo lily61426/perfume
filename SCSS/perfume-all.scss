@@ -1,0 +1,316 @@
+@import "_reset.scss";
+@import "_mixin.scss";
+@import "_color.scss";
+@import "_home.scss";
+@import "_login.scss";
+@import "_product.scss";
+@import "_introduction.scss";
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Open Sans", "Noto Sans TC", sans-serif;
+}
+.mrl-1 {
+    margin: 0px 30px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0px 15px;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 0px;
+
+        #logo {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true);
+            width: 128px;
+            height: 38px;
+            margin-left: 15px;
+            a {
+                display: block;
+                text-indent: 150%;
+                height: 38px;
+                overflow: hidden;
+            }
+        }
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        .nav {
+            display: flex;
+            text-align: center;
+            li a {
+                color: $d-gray;
+                display: block;
+                padding: 10px 16px;
+                text-decoration: none;
+                @include f-4;
+                i {
+                    margin-right: 3px;
+                }
+            }
+        }
+        .icon-cart {
+            display: none;
+            margin-right: 20px;
+            @include f-4;
+            position: relative;
+            i {
+                color: $d-gray;
+            }
+            span {
+                font-size: 10px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                color: $white;
+                background-color: $cis-color;
+                border-radius: 100%;
+                position: absolute;
+                top: -3px;
+                right: -8px;
+            }
+        }
+        .navBar {
+            display: none;
+            width: 72px;
+            text-align: center;
+            color: $l-cis-color;
+        }
+    }
+    @include pad {
+        .container {
+            position: relative;
+            justify-content: space-between;
+            .nav {
+                // display: none;
+                flex-direction: column;
+                width: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                max-height: 0px;
+                transition: all 0.8s;
+              // background-color: $cis-color;
+
+                li {
+                    border-top: 2px solid $white;
+                    a {
+                        padding: 16px;
+                        color: $white;
+                        background-color: $cis-color;
+                        &:hover {
+                            color: $white;
+                            background-color: $l-cis-color;
+                        }
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .nav.active {
+                max-height: 300px;
+            }
+            .icon-cart {
+                display: block;
+            }
+            .navBar {
+                display: block;
+            }
+        }
+    }
+}
+
+// bread start -----------------------------------
+.bread-bg {
+    background-color: $cis-color;
+    @include mb-4;
+
+    .bread {
+        margin-top: 68px;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        display: block;
+        margin-right: 18px;
+        padding: 14px 10px;
+        text-decoration: none;
+    
+        @include f-4;
+        color: #fff;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    &:hover{
+        background-color: $l-cis-color;
+    }
+    }
+
+    @include pad {
+        .bread {
+            display: flex;
+            max-width: 400px;
+            margin: 62px auto 0px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            a {
+                margin-right: 0;
+                padding: 15px;
+            }
+        }
+    }
+
+    @include phone {
+        .bread {
+            display: none;
+        }
+    }
+}
+
+// mail start---------------
+.mail {
+    position: relative;
+    .mail-img {
+        background-image: url("../image/index10.jpg");
+        height: 600px;
+        background-size: 1800px;
+        background-position: -80px -580px;
+    }
+    .subscribe {
+        position: absolute;
+        z-index: 1000;
+        top: 312px;
+        left: 280px;
+        h4 {
+            @include f-2;
+            color: $d-gray;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        input {
+            padding: 18px 16px;
+            @include f-5;
+        }
+    }
+}
+.send-mail {
+    display: flex;
+    width: 350px;
+    border: 2px solid #916000;
+    border-radius: 4px;
+    overflow: hidden;
+    a {
+        @include f-5;
+        display: inline-block;
+        padding: 21px 27px 20px 27px;
+        background-color: $cis-color;
+        font-weight: lighter;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+@include pad {
+    .mail {
+        .mail-img {
+            background-size: 1700px;
+            background-position: -480px -480px;
+        }
+        .subscribe {
+            top: 312px;
+            left: 30px;
+        }
+    }
+}
+@include phone {
+    .mail {
+        .mail-img {
+            background-position: -480px -480px;
+        }
+        .subscribe {
+            top: 312px;
+            left: 30px;
+        }
+    }
+    .send-mail {
+        display: flex;
+        width: 350px;
+        overflow: hidden;
+    }
+}
+
+// footer start---------------
+footer {
+    background-color: $cis-color;
+    .myfooter {
+        display: flex;
+        justify-content: space-between;
+        .footer-control {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            h5 {
+                @include f-6;
+                font-weight: lighter;
+            }
+            img {
+                margin: 20px 20px 20px 0px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 16px;
+            letter-spacing: 1.5px;
+            font-weight: lighter;
+        }
+    }
+    @include pad {
+        .footer-control {
+            width: 1110px;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+            display: none;
+        }
+    }
+    @include phone {
+        .footer-control {
+            width: 1110px;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+            display: none;
+        }
+    }
+}

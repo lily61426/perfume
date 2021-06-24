@@ -1,0 +1,222 @@
+
+
+// product start -----------------------------------
+main{
+    display: flex;
+    flex-wrap: wrap;
+    .p-card{
+        width: 255px;
+        @include mb-4;
+        a{
+            color: black;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+                color: $l-cis-color;
+            }
+        }
+    }
+    .p-card-img-1{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products1.jpg);
+        background-size: cover;
+        background-position: 0px -75px;
+        
+    }
+    .p-card-img-2{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg);
+        background-size: cover;
+        background-position: 0px -135px;
+    }
+    .p-card-img-3{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products3.jpg?raw=true);
+        background-size: cover;
+        background-position: 0px -40px;
+    }
+    .p-card-img-4{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products4.jpg);
+        background-size: cover;
+        background-position: 0px -25px;
+    }
+    .p-card-img-5{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products5.jpg);
+        background-size: cover;
+        background-position: 0px -40px;
+    }
+    .p-card-img-6{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index4.jpg);
+        background-size: 450px;
+        background-position: 0px -35px;
+    }
+    .p-card-img-7{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products7.jpg);
+        background-size: cover;
+        background-position: 0px -55px;
+    }
+    .p-card-img-8{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products8.jpg);
+        background-size: 420px;
+        background-position: -80px -10px;
+    }
+    .p-card-img-9{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png);
+        background-size: cover;
+        background-position: 0px 0px;
+    }
+    .p-card-img-10{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products10.jpg);
+        background-size: cover;
+        background-position: 0px -40px;
+    }
+    .p-card-img-11{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products11.jpg);
+        background-size: 450px;
+        background-position: -40px -190px;
+    }
+    .p-card-img-12{
+        width: 255px;
+        height: 255px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products12.jpg);
+        background-size: 460px;
+        background-position: -100px -50px;
+    }
+    .card-content{
+        h2{
+            @include f-3;
+            font-weight: bold;
+        }
+        p{
+            @include f-5;
+            font-weight: lighter;
+        }
+        i{
+            color: $cis-color;
+        }
+    }
+
+    @include phone{
+        .p-card{
+            width: 165px;
+        }
+        .p-card-img-1{
+            width: 165px;
+            height: 165px;
+            background-position: 0px -55px;
+        }
+        .p-card-img-2{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -85px;
+        }
+        .p-card-img-3{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -25px;
+        }
+        .p-card-img-4{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -5px;
+        }
+        .p-card-img-5{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -30px;
+        }
+        .p-card-img-6{
+            width: 165px;
+            height: 165px;
+            background-size: 300px;
+            background-position: 0px -25px;
+        }
+        .p-card-img-7{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -25px;
+        }
+        .p-card-img-8{
+            width: 165px;
+            height: 165px;
+            background-size: 300px;
+            background-position: -70px -20px;
+        }
+        .p-card-img-9{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px 0px;
+        }
+        .p-card-img-10{
+            width: 165px;
+            height: 165px;
+            background-size: cover;
+            background-position: 0px -25px;
+        }
+        .p-card-img-11{
+            width: 165px;
+            height: 165px;
+            background-size: 300px;
+            background-position: -30px -140px;
+        }
+        .p-card-img-12{
+            width: 165px;
+            height: 165px;
+            background-size: 330px;
+            background-position: -80px -50px;
+        }
+        .card-content{
+            h2{
+                @include f-4;
+            }
+        }
+    
+    }
+
+
+}
+.page{
+    text-align: center;
+    @include mb-4;
+    a{
+        padding: 10px;
+        @include f-4;
+        color: #000;
+        text-decoration: none;
+    }
+    .page-active{
+        color: $cis-color;
+        @include td-ul;
+    }
+    a:hover{
+        color:lighten($l-cis-color,5%);
+        text-decoration: underline;
+    }
+}
+
+

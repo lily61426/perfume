@@ -1,0 +1,1413 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png);
+  width: 128px;
+  height: 38px;
+  display: block;
+  text-indent: 150%;
+  overflow: hidden;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 16px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.banner-content {
+  margin: 62px auto 0;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg);
+  height: 870px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+}
+
+.banner-content .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 260px;
+  padding-top: 295px;
+}
+
+.banner-content .banner-pos {
+  color: #fff;
+  text-shadow: 2px 2px 0.2em rgba(0, 0, 0, 0.349);
+}
+
+.banner-content .banner-pos h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
+
+.banner-content .banner-pos p {
+  display: block;
+  width: 445px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.banner-content .banner-pos a {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  width: 350px;
+  font-size: 28px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .product-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 555px;
+      flex-basis: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .product-description p {
+  width: 350px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+main .product-description a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #AC8A46;
+}
+
+main .product-description-img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 555px;
+      flex-basis: 555px;
+  height: 555px;
+  overflow: hidden;
+}
+
+main .product-description-img img {
+  width: 555px;
+}
+
+main h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
+
+main .product-description-img2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 555px;
+      flex-basis: 555px;
+  width: 555px;
+  overflow: hidden;
+}
+
+main .product-description-img2 img {
+  height: 555px;
+}
+
+main .product-description-img3 {
+  width: 555px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+main .product-description-img3 img {
+  height: 1080px;
+}
+
+main .product-detail {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .product-detail h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+main .product-detail p {
+  display: inline-block;
+  width: 350px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 52px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+
+main .product-detail a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+main .product-description-pos a:hover {
+  text-decoration: underline;
+}
+
+.card-bar {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E0E0E0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.card-bar .card-img {
+  width: 350px;
+  overflow: hidden;
+}
+
+.card-bar .card-img img {
+  height: 540px;
+  display: block;
+}
+
+.card-content a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-content a h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.card-content a p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  font-weight: lighter;
+}
+
+.card-content a h3:hover, .card-content a p:hover {
+  text-decoration: underline;
+}
+
+.card-content .price {
+  font-weight: lighter;
+}
+
+.card-content span {
+  text-decoration: line-through;
+  color: #8D8D8D;
+}
+
+.recycle {
+  margin: 0 auto;
+  width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recycle img {
+  width: 730px;
+  margin-bottom: 60px;
+}
+
+.recycle .recycle-content h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
+
+.recycle .recycle-content h3 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+  width: 350px;
+  font-weight: lighter;
+}
+
+.recycle .recycle-content p {
+  width: 350px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  font-weight: lighter;
+}
+
+.recycle .recycle-content a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #AC8A46;
+  text-decoration: none;
+}
+
+.recycle .recycle-content a:hover {
+  text-decoration: underline;
+}
+
+.mail {
+  position: relative;
+}
+
+.mail .mail-img {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg);
+  height: 600px;
+  background-size: 1800px;
+  background-position: -80px -580px;
+}
+
+.mail .subscribe {
+  position: absolute;
+  z-index: 1000;
+  top: 312px;
+  left: 280px;
+}
+
+.mail .subscribe h4 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+  color: #8D8D8D;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.mail .subscribe input {
+  padding: 18px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.send-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  border: 2px solid #916000;
+  border-radius: 4px;
+}
+
+.send-mail a {
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding: 21px 27px 20px 27px;
+  background-color: #916000;
+  font-weight: lighter;
+  margin-left: -1px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter {
+  margin: 0 auto;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter .footer-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer .myfooter .footer-control h5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+footer .myfooter .footer-control img {
+  margin: 20px 20px 20px 0px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png);
+  width: 128px;
+  height: 38px;
+  display: block;
+  text-indent: 150%;
+  overflow: hidden;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 16px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+.bread-bg {
+  margin: 0 auto;
+  color: aqua;
+  background-color: #916000;
+}
+
+.bread-bg .bread {
+  margin: 62px auto 0;
+  width: 1110px;
+}
+
+.bread-bg ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bread-bg ul a {
+  display: block;
+  margin-right: 28px;
+  padding: 14px 0px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+main {
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .log-in-img {
+  width: 730px;
+  height: 730px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/login1.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position-x: -180px;
+  margin-bottom: 60px;
+}
+
+main .log-in-align h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+
+main .log-in-align .email {
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+main .log-in-align .password {
+  color: #212529;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+main .log-in-align .log-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .log-in-align .log-password .forget-password {
+  color: #916000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .log-in-align .log-password .registered {
+  padding: 8px 16px;
+  color: #916000;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 1px solid #916000;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .log-in-align .log-password .sign-in {
+  margin-left: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: #916000;
+  border: 1px solid #916000;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main .log-in-align .log-password .forget-password:hover, main .log-in-align .log-password .registered:hover, main .log-in-align .log-password .sign-in:hover {
+  text-decoration: underline;
+}
+
+main .log-in-align .input-pd {
+  padding: 10px 0px 11px 12px;
+  border: 1px solid #E0E0E0;
+}
+
+footer {
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter {
+  margin: 0 auto;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter .footer-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer .myfooter .footer-control h5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+footer .myfooter .footer-control img {
+  margin: 20px 20px 20px 0px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png);
+  width: 128px;
+  height: 38px;
+  display: block;
+  text-indent: 150%;
+  overflow: hidden;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 16px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+.bread-bg {
+  margin: 0 auto;
+  color: aqua;
+  background-color: #916000;
+  margin-bottom: 60px;
+}
+
+.bread-bg .bread {
+  margin: 62px auto 0;
+  width: 1110px;
+}
+
+.bread-bg ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bread-bg ul a {
+  display: block;
+  margin-right: 28px;
+  padding: 14px 0px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .p-card {
+  width: 255px;
+  margin-bottom: 60px;
+}
+
+main .p-card-img-1 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products1.jpg);
+  background-size: cover;
+  background-position: 0px -75px;
+}
+
+main .p-card-img-2 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg);
+  background-size: cover;
+  background-position: 0px -135px;
+}
+
+main .p-card-img-3 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products3.jpg?raw=true);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-4 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products4.jpg);
+  background-size: cover;
+  background-position: 0px -25px;
+}
+
+main .p-card-img-5 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products5.jpg);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-6 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index4.jpg);
+  background-size: 450px;
+  background-position: 0px -35px;
+}
+
+main .p-card-img-7 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products7.jpg);
+  background-size: cover;
+  background-position: 0px -55px;
+}
+
+main .p-card-img-8 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products8.jpg);
+  background-size: 420px;
+  background-position: -80px -10px;
+}
+
+main .p-card-img-9 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png);
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+main .p-card-img-10 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products10.jpg);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-11 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products11.jpg);
+  background-size: 450px;
+  background-position: -40px -190px;
+}
+
+main .p-card-img-12 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products12.jpg);
+  background-size: 460px;
+  background-position: -100px -50px;
+}
+
+main .card-content h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+main .card-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+main .card-content i {
+  color: #916000;
+}
+
+.page {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page a {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #000;
+  text-decoration: none;
+}
+
+.page .page-active {
+  color: #916000;
+  text-decoration: underline;
+}
+
+.page a:hover {
+  color: #b99753;
+  text-decoration: underline;
+}
+
+.mail {
+  position: relative;
+}
+
+.mail .mail-img {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg);
+  height: 600px;
+  background-size: 1800px;
+  background-position: -80px -580px;
+}
+
+.mail .subscribe {
+  position: absolute;
+  z-index: 1000;
+  top: 312px;
+  left: 280px;
+}
+
+.mail .subscribe h4 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+  color: #8D8D8D;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.mail .subscribe input {
+  padding: 18px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.send-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  border: 2px solid #916000;
+  border-radius: 4px;
+}
+
+.send-mail a {
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding: 21px 27px 20px 27px;
+  background-color: #916000;
+  font-weight: lighter;
+  margin-left: -1px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter {
+  margin: 0 auto;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter .footer-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer .myfooter .footer-control h5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+footer .myfooter .footer-control img {
+  margin: 20px 20px 20px 0px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png);
+  width: 128px;
+  height: 38px;
+  display: block;
+  text-indent: 150%;
+  overflow: hidden;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 16px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+.bread-bg {
+  margin: 0 auto;
+  color: aqua;
+  background-color: #916000;
+  margin-bottom: 60px;
+}
+
+.bread-bg .bread {
+  margin: 62px auto 0;
+  width: 1110px;
+}
+
+.bread-bg ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bread-bg ul a {
+  display: block;
+  margin-right: 28px;
+  padding: 14px 0px;
+  color: #8D8D8D;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .p-card {
+  width: 255px;
+  margin-bottom: 60px;
+}
+
+main .p-card-img-1 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products1.jpg);
+  background-size: cover;
+  background-position: 0px -75px;
+}
+
+main .p-card-img-2 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg);
+  background-size: cover;
+  background-position: 0px -135px;
+}
+
+main .p-card-img-3 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products3.jpg?raw=true);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-4 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products4.jpg);
+  background-size: cover;
+  background-position: 0px -25px;
+}
+
+main .p-card-img-5 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products5.jpg);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-6 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index4.jpg);
+  background-size: 450px;
+  background-position: 0px -35px;
+}
+
+main .p-card-img-7 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products7.jpg);
+  background-size: cover;
+  background-position: 0px -55px;
+}
+
+main .p-card-img-8 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products8.jpg);
+  background-size: 420px;
+  background-position: -80px -10px;
+}
+
+main .p-card-img-9 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index3.png);
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+main .p-card-img-10 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products10.jpg);
+  background-size: cover;
+  background-position: 0px -40px;
+}
+
+main .p-card-img-11 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products11.jpg);
+  background-size: 450px;
+  background-position: -40px -190px;
+}
+
+main .p-card-img-12 {
+  width: 255px;
+  height: 255px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/products12.jpg);
+  background-size: 460px;
+  background-position: -100px -50px;
+}
+
+main .card-content h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+main .card-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+main .card-content i {
+  color: #916000;
+}
+
+.page {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page a {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #000;
+  text-decoration: none;
+}
+
+.page .page-active {
+  color: #916000;
+  text-decoration: underline;
+}
+
+.page a:hover {
+  color: #b99753;
+  text-decoration: underline;
+}
+
+section {
+  width: 1140px;
+  margin: 60px auto;
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section img {
+  width: 730px;
+}
+
+section .product-img img {
+  width: 730px;
+}
+
+section aside {
+  width: 350px;
+}
+
+section aside h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
+
+section aside p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+
+footer {
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter {
+  margin: 0 auto;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .myfooter .footer-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+footer .myfooter .footer-control h5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+footer .myfooter .footer-control img {
+  margin: 20px 20px 20px 0px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.mrl-1 {
+  margin: 0px 30px;
+}
+/*# sourceMappingURL=perfume-all.css.map */

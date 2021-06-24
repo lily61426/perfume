@@ -1,0 +1,70 @@
+@mixin f-1 {
+    font-size: 40px;
+    line-height: 60px;
+}
+@mixin f-2 {
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 1.2px;
+    font-weight:bolder;
+}
+@mixin f-3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+@mixin f-4 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}
+@mixin f-5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin f-6 {
+    font-size: 14px;
+    line-height: 21px;
+}
+@mixin f-7 {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+
+
+@mixin mb-1{
+    margin-bottom: 8px;
+}
+@mixin mb-2{
+    margin-bottom: 16px;
+}
+@mixin mb-3{
+    margin-bottom: 32px;
+}
+@mixin mb-4{
+    margin-bottom: 60px;
+}
+@mixin mb-5{
+    margin-bottom: 80px;
+}
+@mixin mb-6{
+    margin-bottom: 100px;
+}
+
+
+@mixin td-ul {
+    text-decoration: underline;
+}
+
+
+@mixin pad {
+    @media (max-width:768px){
+        @content;
+    }
+} 
+
+@mixin phone {
+    @media (max-width:576px){
+        @content;
+    }
+}
